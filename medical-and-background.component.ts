@@ -1,0 +1,27 @@
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+@Component({
+  selector: 'app-medical-and-background',
+  templateUrl: './medical-and-background.component.html',
+  styleUrls: ['./medical-and-background.component.css']
+})
+export class MedicalAndBackgroundComponent implements OnInit {
+
+  constructor(private router: Router) { }
+
+  ngOnInit() {
+  }
+  back(){
+    this.router.navigate(['upload-document'])
+  }
+  next(){
+    this.router.navigate(['transportation'])
+  }
+  
+  save(){
+    this.router.navigate(['medical-and-background'])
+  }
+  cancel(){
+    this.router.navigate(['medical-and-background'])
+  }
+}

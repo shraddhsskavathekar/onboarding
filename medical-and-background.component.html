@@ -1,0 +1,25 @@
+<html>
+<fieldset>
+    <h3>This Page is regarding Medical Verification and Background Verification<br> </h3>
+      <h4>Medical Verification <br></h4>
+       <p> You have to do Medical Test and thereafter upload medical report.</p><br>
+   
+
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+    
+        Medical Report:<br><br>
+        <input type="file" name="fileToUpload" id="fileToUpload">
+        <input type="submit" value="Upload File" name="submit">
+    
+    </form><br>
+
+    <h4>Background Verification <br></h4>
+    <p>Click a link below for background verification<br></p>
+      <a href="url">link text</a> <br>
+  </fieldset>
+</html>
+<button (click)="back()">Previous</button>
+        <button (click)="next()">Next</button>
+
+<button (click)="save()">Save</button>
+<button (click)="cancel()">Cancel</button>
