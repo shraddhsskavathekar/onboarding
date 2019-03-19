@@ -1,3 +1,7 @@
+.container {
+   
+    height:900px !important;
+}
 label{
     display:inline-block;
     width:200px;
@@ -5,13 +9,14 @@ label{
     text-align:left;
     }
     
-  
+    
     
     fieldset{
     border:none;
     width:500px;
     margin:0px auto;
     }
+
     .btn {
         width: 80px;
         height: 40px;
@@ -20,33 +25,14 @@ label{
         text-align: center;
         font-size: 14px;
         line-height: 1.42857;
-        
-    }
-    .btn1 {
-        width: 80px;
-        height: 40px;
-        padding: 6px 0px;
-        border-radius: 15px;
-        text-align: center;
-        font-size: 14px;
-        line-height: 1.42857;
-
-       
-        float:right;
-        
+        float: right;
     }
     .header{
         margin-left: 5% ;
         margin-right: 5% ;
-     
+     background-color: rgb(50, 119, 146);
+     width: 100%;
+     height: 50%;
      }
-     
 
-   
-         
-
-
-
-
-
-
+    

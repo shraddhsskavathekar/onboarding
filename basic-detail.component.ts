@@ -12,14 +12,19 @@ export class BasicDetailComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  home(){
+    this.router.navigate(['before-joining'])
+  }
+  log(){
+    this.router.navigate([''])
+  }
   proceed(){
     this.router.navigate(['upload-document'])
   }
   save(){
-    this.router.navigate([''])
+    this.router.navigate(['basic-detail'])
   }
   cancel(){
-    this.router.navigate([''])
+    this.router.navigate(['before-joining'])
   }
 }

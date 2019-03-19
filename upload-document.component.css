@@ -12,3 +12,29 @@ label{
     width:500px;
     margin:0px auto;
     }
+
+    .btn {
+        width: 80px;
+        height: 40px;
+        padding: 6px 0px;
+        border-radius: 15px;
+        text-align: center;
+        font-size: 14px;
+        line-height: 1.42857;
+        float: right;
+    }
+    .btn1 {
+        width: 120px;
+        height: 50px;
+        padding: 6px 0px;
+        border-radius: 18px;
+        text-align: center;
+        font-size: 14px;
+        line-height: 1.42857;
+    }
+    .header{
+        margin-left: 5% ;
+        margin-right: 5% ;
+     
+     }
+     

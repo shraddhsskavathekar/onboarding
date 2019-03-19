@@ -1,13 +1,24 @@
+
+    
+    <nav>
+        
+      <!----<a routerLink="basic-detail">Basic</a> &nbsp;-->
+      
+    </nav>
+    
+    
+    
+    <router-outlet></router-outlet>
 <html>
 <fieldset>
     <h3>This Page is regarding Medical Verification and Background Verification<br> </h3>
       <h4>Medical Verification <br></h4>
        <p> You have to do Medical Test and thereafter upload medical report.</p><br>
-   
-
+   <p> <a href="url">Click here &nbsp;</a>to know about medical test to be done</p>
+<br>
     <form action="upload.php" method="post" enctype="multipart/form-data">
     
-        Medical Report:<br><br>
+       Upload Medical Report below:<br><br>
         <input type="file" name="fileToUpload" id="fileToUpload">
         <input type="submit" value="Upload File" name="submit">
     
@@ -18,8 +29,11 @@
       <a href="url">link text</a> <br>
   </fieldset>
 </html>
-<button (click)="back()">Previous</button>
-        <button (click)="next()">Next</button>
 
-<button (click)="save()">Save</button>
-<button (click)="cancel()">Cancel</button>
+        
+
+
+<button (click)="cancel()"class="btn">Cancel</button>
+<button (click)="save()"class="btn">Save</button>
+<button (click)="next()"class="btn">Next</button>
+<button (click)="back()"class="btn">Previous</button>

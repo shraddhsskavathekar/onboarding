@@ -22,6 +22,12 @@ export class TransportationComponent implements OnInit {
     this.router.navigate(['transportation'])
   }
   cancel(){
-    this.router.navigate(['transportation'])
+    this.router.navigate(['before-joining'])
+  }
+  home(){
+    this.router.navigate(['before-joining'])
+  }
+  log(){
+    this.router.navigate([''])
   }
 }

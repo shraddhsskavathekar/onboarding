@@ -17,9 +17,12 @@ import { MedicalInsuranceComponent } from './Components/medical-insurance/medica
 import { TrainingOverviewComponent } from './Components/training-overview/training-overview.component';
 import { Complete1Component } from './Components/complete1/complete1.component';
 import { HeaderComponent } from './header/header.component';
-
+import { LogginComponent } from './Components/loggin/loggin.component';
+import { LogtoComponent } from './logto/logto.component';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
+  {path:'',component:HomeComponent},
   {path:'upload-document',component:UploadDocumentComponent},
   {path:'basic-detail',component:BasicDetailComponent},
   {path:'yl',component:YLComponent},
@@ -29,7 +32,11 @@ const routes: Routes = [
   {path:'transportation',component:TransportationComponent},
   {path:'accomodation',component:AccomodationComponent },
   {path:'first-day-instruction',component:FirstDayInstructionComponent},
-
+  {path:'header',component:HeaderComponent},
+  {path:'before-joining',component:BeforeJoiningComponent},
+  {path:'loggin',component:LogginComponent},
+  {path:'logto',component:LogtoComponent},
+  
 ];
 
 @NgModule({

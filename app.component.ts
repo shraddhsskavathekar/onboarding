@@ -16,7 +16,10 @@ export class AppComponent {
     this.router.navigate([''])
   }
   log(){
-    this.router.navigate(['basic-detail'])
+    this.router.navigate(['logto'])
+  }
+  proces(){
+    this.router.navigate(['logto'])
   }
   
   

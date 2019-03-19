@@ -23,6 +23,12 @@ export class FirstDayInstructionComponent implements OnInit {
     this.router.navigate(['first-day-instruction'])
   }
   cancel(){
-    this.router.navigate(['first-day-instruction'])
+    this.router.navigate(['before-joining'])
+  }
+  home(){
+    this.router.navigate(['before-joining'])
+  }
+  log(){
+    this.router.navigate([''])
   }
 }

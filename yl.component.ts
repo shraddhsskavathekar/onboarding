@@ -13,7 +13,7 @@ export class YLComponent implements OnInit {
   }
 
   back(){
-    this.router.navigate(['basic-detail'])
+    this.router.navigate(['upload-document'])
   }
   next(){
     this.router.navigate(['medical-and-background'])
@@ -23,6 +23,12 @@ export class YLComponent implements OnInit {
     this.router.navigate(['yl'])
   }
   cancel(){
-    this.router.navigate(['basic-detail'])
+    this.router.navigate(['before-joining'])
+  }
+  home(){
+    this.router.navigate(['before-joining'])
+  }
+  log(){
+    this.router.navigate([''])
   }
 }

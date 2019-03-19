@@ -22,6 +22,12 @@ export class MedicalAndBackgroundComponent implements OnInit {
     this.router.navigate(['medical-and-background'])
   }
   cancel(){
-    this.router.navigate(['medical-and-background'])
+    this.router.navigate(['before-joining'])
+  }
+  home(){
+    this.router.navigate(['before-joining'])
+  }
+  log(){
+    this.router.navigate([''])
   }
 }

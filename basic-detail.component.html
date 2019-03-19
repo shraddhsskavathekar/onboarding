@@ -1,4 +1,15 @@
 
+    
+    <nav>
+        
+      <!----<a routerLink="basic-detail">Basic</a> &nbsp;-->
+      
+    </nav>
+    
+    
+    
+    <router-outlet></router-outlet>
+    
 
 <div >
     <fieldset>
@@ -40,30 +51,25 @@
         <label for="Languages">Languages Known:</label><input type="text" name="Languages" size="20"><br><br>
         
         <h4>Address details</h4>
-        <Address>Current address</Address><br>
+        <label>Current address</label> <input type="checkbox" ng-model="account.sameAsAbove" /><span>Same as Current address</span>
+        <div ng-hide="account.sameAsAbove"> </div><br>
         
         <address>
-            <input type="text" ng-model="currentAddress" placeholder="Current Address"/><br><br>
-            <input type="text" ng-model="city" placeholder="City"/><br><br>
-            <input type="text" ng-model="District" placeholder="District"/><br><br>
-            <input type="text" ng-model="postalcode" placeholder="Postal Code"/><br><br>
+            <input type="text" ng-model="currentAddress" placeholder="Current Address"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" ng-model="permanentAddress" placeholder="Permanent Address"/><br><br>
+   
+            <input type="text" ng-model="city" placeholder="City"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" ng-model="city" placeholder="City"/><br><br>
+            <input type="text" ng-model="District" placeholder="District"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" ng-model="District" placeholder="District"/><br><br>
+            <input type="text" ng-model="postalcode" placeholder="Postal Code"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" ng-model="postalcode" placeholder="Postal Code"/><br><br>
             
-   <input type="checkbox" ng-model="account.sameAsAbove" /><span>Same as Above</span><br><br>
-   <div ng-hide="account.sameAsAbove">
-
-   <input type="text" ng-model="permanentAddress" placeholder="Permanent Address"/><br><br>
-   <input type="text" ng-model="city" placeholder="City"/><br><br>
-            <input type="text" ng-model="District" placeholder="District"/><br><br>
-            <input type="text" ng-model="postalcode" placeholder="Postal Code"/><br><br>
-            
-   </div>
-
         </address>
         </fieldset>
 </div>
 <br>
-<button (click)="proceed()">Next</button>
+
+<button (click)="cancel()"class="btn1">Cancel</button>&nbsp;
+<button (click)="save()"class="btn1">Save</button>&nbsp;
+<button (click)="proceed()"class="btn1">Next</button>
        
 
-<button (click)="save()">Save</button>
-<button (click)="cancel()">Cancel</button>
+
+

@@ -23,8 +23,9 @@ import { Complete1Component } from './Components/complete1/complete1.component';
 import { HeaderComponent } from './header/header.component';
 
 
-
-
+import { LogginComponent } from './Components/loggin/loggin.component';
+import { LogtoComponent } from './logto/logto.component';
+import { HomeComponent } from './home/home.component';
 
 
 
@@ -49,6 +50,11 @@ import { HeaderComponent } from './header/header.component';
     TrainingOverviewComponent,
     Complete1Component,
     HeaderComponent,
+    LogginComponent,
+    LogginComponent,
+    LogtoComponent,
+    HomeComponent,
+  
     
   ],
   imports: [

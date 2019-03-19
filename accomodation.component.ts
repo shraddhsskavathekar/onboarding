@@ -23,6 +23,12 @@ export class AccomodationComponent implements OnInit {
     this.router.navigate(['accomodation'])
   }
   cancel(){
-    this.router.navigate(['accomodation'])
+    this.router.navigate(['before-joining'])
+  }
+  home(){
+    this.router.navigate(['before-joining'])
+  }
+  log(){
+    this.router.navigate([''])
   }
 }

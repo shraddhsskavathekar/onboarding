@@ -28,6 +28,13 @@ export class UploadDocumentComponent implements OnInit {
     this.router.navigate(['upload-document'])
   }
   cancel(){
-    this.router.navigate(['basic-detail'])
+    this.router.navigate(['before-joining'])
+  }
+
+  home(){
+    this.router.navigate(['before-joining'])
+  }
+  log(){
+    this.router.navigate([''])
   }
 }

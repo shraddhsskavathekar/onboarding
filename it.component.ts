@@ -12,7 +12,7 @@ export class ITComponent implements OnInit {
   ngOnInit() {
   }
   back(){
-    this.router.navigate(['basic-detail'])
+    this.router.navigate(['upload-document'])
   }
   next(){
     this.router.navigate(['medical-and-background'])
@@ -22,6 +22,12 @@ export class ITComponent implements OnInit {
     this.router.navigate(['it'])
   }
   cancel(){
-    this.router.navigate(['it'])
+    this.router.navigate(['before-joining'])
+  }
+  home(){
+    this.router.navigate(['before-joining'])
+  }
+  log(){
+    this.router.navigate([''])
   }
 }

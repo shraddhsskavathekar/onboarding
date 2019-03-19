@@ -37,7 +37,7 @@ export class ExpComponent implements OnInit {
   ngOnInit() {
   }
   back(){
-    this.router.navigate(['basic-detail'])
+    this.router.navigate(['upload-document'])
   }
   next(){
     this.router.navigate(['medical-and-background'])
@@ -47,6 +47,12 @@ export class ExpComponent implements OnInit {
     this.router.navigate(['exp'])
   }
   cancel(){
-    this.router.navigate(['exp'])
+    this.router.navigate(['before-joining'])
+  }
+  home(){
+    this.router.navigate(['before-joining'])
+  }
+  log(){
+    this.router.navigate([''])
   }
 }

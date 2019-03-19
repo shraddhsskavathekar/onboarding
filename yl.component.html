@@ -1,3 +1,15 @@
+
+    
+    <nav>
+        
+      <!----<a routerLink="basic-detail">Basic</a> &nbsp;-->
+      
+    </nav>
+    
+    
+    
+    <router-outlet></router-outlet>
+
 <html> 
 <fieldset>
     <h3><p class="indent">Upload the documents mentioned</p></h3>
@@ -45,8 +57,11 @@
 </fieldset>
 </html>
 
-<button (click)="back()">Previous</button>
-        <button (click)="next()">Next</button>
 
-<button (click)="save()">Save</button>
-<button (click)="cancel()">Cancel</button>
+
+
+<button (click)="cancel()"class="btn">Cancel</button>
+<button (click)="save()"class="btn">Save</button>
+<button (click)="next()"class="btn">Next</button>
+<button (click)="back()"class="btn">Previous</button>
+       
