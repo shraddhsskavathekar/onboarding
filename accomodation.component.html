@@ -6,7 +6,21 @@
     
   </nav>
   
-  
+  <div class="first">
+      <div [ngStyle]="{'width.%':width}" class="second"></div>
+  </div>
+
+  <h4 class="hint">
+      <div class="container">
+          <ul class="progressbar">
+          <li class="active"></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+      </ul>
+      </div>
+  </h4>
   
   <router-outlet></router-outlet>
   

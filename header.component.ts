@@ -12,7 +12,7 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
   }
   home(){
-    this.router.navigate([''])
+    this.router.navigate(['before-joining'])
   }
   log(){
     this.router.navigate([''])

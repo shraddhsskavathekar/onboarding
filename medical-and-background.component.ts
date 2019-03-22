@@ -8,8 +8,11 @@ import { Router } from '@angular/router';
 export class MedicalAndBackgroundComponent implements OnInit {
 
   constructor(private router: Router) { }
-
+  name:any;
+  subpl:any;
+  width:any;
   ngOnInit() {
+    this.width=60;
   }
   back(){
     this.router.navigate(['upload-document'])

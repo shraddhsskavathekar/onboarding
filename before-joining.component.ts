@@ -18,6 +18,6 @@ export class BeforeJoiningComponent implements OnInit {
     this.router.navigate(['before-joining'])
   }
   log(){
-    this.router.navigate([''])
+    this.router.navigate(['home'])
   }
 }

@@ -9,8 +9,13 @@ import { Router } from '@angular/router';
 export class BasicDetailComponent implements OnInit {
 
   constructor(private router: Router) { }
-
+name:any;
+subpl:any;
+width:any;
   ngOnInit() {
+   
+    this.width=20;
+    
   }
   home(){
     this.router.navigate(['before-joining'])

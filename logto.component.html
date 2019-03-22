@@ -1,21 +1,25 @@
-<form action="action_page.php">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;<label class="sign" >SignIn</label>
-  <div class="imgcontainer">
-    <img src="assets/Image/logto.jpeg" alt="Avatar" class="avatar">
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+
+    <!-- Icon -->
+    <div class="fadeIn first">
+      <img src="./assets/Image/logto.jpeg" id="icon" alt="User Icon" />
+    </div>
+
+    <!-- Login Form -->
+    <form>
+      <input type="text" id="login" class="fadeIn second" name="login" #ref1 placeholder="login">
+      <input type="text" id="password" class="fadeIn third" name="login" #ref2 placeholder="password">
+      <input type="submit" class="fadeIn fourth"(click)="reside(ref1.value,ref2.value)" value="Log In">
+    </form>
+
+   
+
   </div>
-
-  <div class="container">
-    
-    <input type="text" placeholder="Enter Username" name="uname" required>
-
-    
-    <input type="password" placeholder="Enter Password" name="psw" required>
-
-    <button type="submit"(click)="reside()">Login</button><br>
-    
-  </div>
-
-  
-</form>
+</div>

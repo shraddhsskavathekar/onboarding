@@ -9,8 +9,12 @@ import { Router } from '@angular/router';
 export class AccomodationComponent implements OnInit {
 
   constructor(private router: Router) { }
-
-  ngOnInit() {
+  name:any;
+  subpl:any;
+  width:any;
+    ngOnInit() {
+     
+      this.width=100;
   }
   back(){
     this.router.navigate(['transportation'])

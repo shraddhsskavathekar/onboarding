@@ -6,19 +6,33 @@
       
     </nav>
     
-    
-    
+    <div class="first">
+            <div [ngStyle]="{'width.%':width}" class="second"></div>
+        </div>
+        <h4 class="hint">
+                <div class="container">
+                    <ul class="progressbar">
+                    <li class="active"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                </div>
+            </h4>
     <router-outlet></router-outlet>
 <html>
 <fieldset>
-    <h3>This Page is regarding Medical Verification and Background Verification<br> </h3>
-      <h4>Medical Verification <br></h4>
-       <p> You have to do Medical Test and thereafter upload medical report.</p><br>
-   <p> <a href="url">Click here &nbsp;</a>to know about medical test to be done</p>
-<br>
+    <h3>This Page is regarding Medical Verification and Background Verification </h3>
+      <h4>Medical Verification</h4> 
+       <p> You have to do Medical Test and thereafter upload medical report.</p>
+   <p>Click on a link to know the Medical test to be done<br>
+       <a  href="./assets/1.pdf">Link </a></p>
+
+<h4>Upload Medical Report below:</h4>
     <form action="upload.php" method="post" enctype="multipart/form-data">
     
-       Upload Medical Report below:<br><br>
+       
         <input type="file" name="fileToUpload" id="fileToUpload">
         <input type="submit" value="Upload File" name="submit">
     

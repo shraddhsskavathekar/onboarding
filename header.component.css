@@ -12,3 +12,22 @@ label{
     width:500px;
     margin:0px auto;
     }
+    .header{
+
+        background-color: blue;
+    }
+    .btn5{
+        margin-top: 1.5%;
+        float: right;
+        margin-right: 3%; 
+        width: 80px;
+        height: 40px;
+        padding: 6px 0px;
+        border-radius: 15px;
+        text-align: center;
+        font-size: 14px;
+        line-height: 1.42857;
+        
+    }
+   
+    

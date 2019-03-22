@@ -6,28 +6,40 @@
       
     </nav>
     
-    
-    
+    <div class="first">
+            <div [ngStyle]="{'width.%':width}" class="second"></div>
+        </div>
+        <h4 class="hint">
+    <div class="container">
+        <ul class="progressbar">
+        <li class="active"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    </div>
+</h4>
     <router-outlet></router-outlet>
     
 
 <div >
     <fieldset>
         <h3>Basic Details</h3><br>
-        <label for="Name">Full Name:</label><input type="text" name="Name" size="20"><br><br>
-        <label for="father">Father Name:</label><input type="text" name="father" size="20"><br><br>
+        <label for="Name">Full Name*:</label><input type="text" name="Name" size="20"><br><br>
+        <label for="father">Father Name*:</label><input type="text" name="father" size="20"><br><br>
         <label for="spouse">Spouse Name:</label><input type="text" name="spouse" size="20"><br><br>
-        <label for="blood">Blood Group:</label><input type="text" name="blood" size="20"><br><br>
+        <label for="blood">Blood Group*:</label><input type="text" name="blood" size="20"><br><br>
         
-        <label for="DoB">DoB:</label><input type="date" data-date-inline-picker="true" />
+        <label for="DoB">DoB:*</label><input type="date" data-date-inline-picker="true" />
         <br><br>
-        <label for="gender">Gender:</label>  
+        <label for="gender">Gender*:</label>  
           <input type="radio" name="gender" value="male" checked> Male
           <input type="radio" name="gender" value="female"> Female <br> <br>
           
-        <label for="Mobile">Mobile:</label><input type="text" name="Mobile" size="20"><br><br>
-        <label for="Mailid">Mail id:</label><input type="text" name="Mailid" size="20"><br><br>
-        <label for="Marital">Marital Status:</label>
+        <label for="Mobile">Mobile*:</label><input type="text" name="Mobile" size="20"><br><br>
+        <label for="Mailid">Mail id*:</label><input type="text" name="Mailid" size="20"><br><br>
+        <label for="Marital">Marital Status*:</label>
         <select id="Marital Status" name="Marital Status">
             <option value="Select">Select</option>
             <option value="Single">Single</option>
@@ -36,15 +48,15 @@
         <label for="year">Years of Experience:</label><input type="text" name="year" size="20"><br><br>
         <label for="UAN">Previous UAN No:</label><input type="text" name="UAN" size="20"><br><br>
         <label for="PF">Previous PF No:</label><input type="text" name="PF" size="20"><br><br>
-        <label for="aadhar">AADHAR No:</label><input type="text" name="aadhar" size="20"><br><br>
+        <label for="aadhar">AADHAR No*:</label><input type="text" name="aadhar" size="20"><br><br>
         <label for="PAN">PAN No:</label><input type="text" name="PAN" size="20"><br><br>
         <label for="bank">Bank Account No(ICICI bank only)(Keep blank if not ICICI bank account):</label><input type="text" name="aadhar" size="20"><br><br>
         
         <label for="org">Previous Organization Name:</label><input type="text" name="org" size="20"><br><br>
         <label for="DoB">Date of left of previous organization:</label><input type="date" data-date-inline-picker="true" />
         <br><br>
-        <label for="posting">Location of Posting:</label><input type="text" name="posting" size="20"><br><br>
-        <label for="desig">Designation:</label><input type="text" name="desig" size="20"><br><br>
+        <label for="posting">Location of Posting*:</label><input type="text" name="posting" size="20"><br><br>
+        <label for="desig">Designation*:</label><input type="text" name="desig" size="20"><br><br>
         
         <label for="Skills">Professional Skills:</label><input type="text" name="Skills" size="20"><br><br>
         <label for="hobbies">Hobbies:</label><input type="text" name="hobbies" size="20"><br><br>

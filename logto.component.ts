@@ -17,7 +17,7 @@ export class LogtoComponent implements OnInit {
       alert("Please enter username and password");
       return false;
     }else {
-      this.router.navigate(['basic-detail']);
+      this.router.navigate(['before-joining']);
       location.reload();
     }
 }

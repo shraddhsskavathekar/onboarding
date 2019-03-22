@@ -6,8 +6,20 @@
       
     </nav>
     
-    
-    
+    <div class="first">
+            <div [ngStyle]="{'width.%':width}" class="second"></div>
+        </div>
+        <h4 class="hint">
+                <div class="container">
+                    <ul class="progressbar">
+                    <li class="active"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                </div>
+            </h4>
     <router-outlet></router-outlet>
 
 <html>             
@@ -34,8 +46,16 @@
         <option value="5">5</option> 
     </select><br>
     
-     <p>You have to mention the name and age of family members arriving with you.</p><br>
-    
+     <p>You have to mention the name and age of family members arriving with you.</p>
+     <input type="text" #ref1 placeholder="Member1" name="uname" required>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     <input type="text" #ref1 placeholder="Age" name="uname" required><br><br>
+     <input type="text" #ref1 placeholder="Member2" name="uname" required>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     <input type="text" #ref1 placeholder="Age" name="uname" required><br><br>
+     <input type="text" #ref1 placeholder="Member3" name="uname" required>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     <input type="text" #ref1 placeholder="Age" name="uname" required><br><br>
      <label>Select Grade</label>
         <select id="category" name="Category" Align="CENTER">
         <option value="Select Category">Select Grade</option>
@@ -74,8 +94,8 @@
 
 </html>
 
-        
-
+        <br><br>
+        <br><br>
 
 <button (click)="cancel()"class="btn">Cancel</button>
 <button (click)="save()"class="btn">Save</button>

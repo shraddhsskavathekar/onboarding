@@ -8,8 +8,11 @@ import { Router } from '@angular/router';
 export class YLComponent implements OnInit {
 
   constructor(private router: Router) { }
-
+  name:any;
+  subpl:any;
+  width:any;
   ngOnInit() {
+    this.width=40;
   }
 
   back(){
