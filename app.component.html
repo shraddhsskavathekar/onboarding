@@ -1,6 +1,19 @@
 <!--The content below is only a placeholder and can be replaced.-->
-
-<app-header></app-header>
-
+<ng-template>
+    <p>Hello World!</p>
+  </ng-template> 
+<div style="text-align:center">
+  <h4>Upload Documents</h4>
+<p> Please select the type of Candidate you want to prefer:</p>
+<div class="custom-select" style="width:1200px;">
+  <select> 
+    <option value="0">Select</option>
+   <option value="Young Leader">Young Leader</option>
+    <option value="Experienced">Experienced</option>
+    <option value="Internal Transfer">Internal Transfer</option>
+    </select>
+</div> 
+<br><br><button class="btn success">Back</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button class="btn success">Save</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button class="btn success">Next</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <router-outlet></router-outlet>
-
