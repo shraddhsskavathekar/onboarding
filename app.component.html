@@ -1,10 +1,7 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<ng-template>
-    <p>Hello World!</p>
-  </ng-template> 
-<div style="text-align:center">
-  <h4>Upload Documents</h4>
-<p> Please select the type of Candidate you want to prefer:</p>
+
+<h2 id="ngSwitch">Upload Documents</h2>
+
+<div>Select the type of candidate you are</div>
 <div class="custom-select" style="width:1200px;">
   <select> 
     <option value="0">Select</option>
@@ -13,7 +10,19 @@
     <option value="Internal Transfer">Internal Transfer</option>
     </select>
 </div> 
-<br><br><button class="btn success">Back</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<button class="btn success">Save</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<button class="btn success">Next</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<router-outlet></router-outlet>
+<p>
+  <label *ngFor="let h of heroes">
+    <input type="radio" name="heroes" [(ngModel)]="hero" [value]="h">{{h.name}}
+  </label>
+  
+</p>
+<h4>Upload the Documents given below.</h4>
+
+<div [ngSwitch]="hero?.emotion">
+  <app-happy-hero    *ngSwitchCase="'happy'"    [hero]="hero"></app-happy-hero>
+  <app-sad-hero      *ngSwitchCase="'sad'"      [hero]="hero"></app-sad-hero>
+  <app-confused-hero *ngSwitchCase="'confused'" [hero]="hero"></app-confused-hero>
+  <app-unknown-hero  *ngSwitchDefault           [hero]="hero"></app-unknown-hero>
+</div>
+
+

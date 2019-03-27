@@ -1,22 +1,25 @@
+import { NgModule }      from '@angular/core';
+import { FormsModule }   from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { YoungComponent } from './young/young.component';
-import { InternalComponent } from './internal/internal.component';
 
+import { AppComponent }         from './app.component';
+import { heroSwitchComponents } from './hero-switch.components';
+import { UnlessDirective }    from './unless.directive';
 
 @NgModule({
+  imports: [ BrowserModule, FormsModule ],
   declarations: [
     AppComponent,
-    YoungComponent,
-    InternalComponent,
+    heroSwitchComponents,
+    UnlessDirective
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [ AppComponent ]
 })
 export class AppModule { }
+
+
+/*
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+*/
